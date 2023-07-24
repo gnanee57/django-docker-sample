@@ -20,5 +20,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Copy the Django project files into the container
 COPY . /app/
 
-# Run Django development server (you may need to change this for production)
 CMD python manage.py runserver 0.0.0.0:8000
+
+
